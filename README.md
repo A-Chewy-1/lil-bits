@@ -8,7 +8,7 @@ Cash addresses and legacy addresses are fully compatible with one another, and t
 
 How to make a discord bot if you don't know; Relevant up to step 5: https://www.digitaltrends.com/gaming/how-to-make-a-discord-bot/
 
-This bot uses "bits" as its default unit. 
+This bot uses "bits" as its default unit. "!tip @user 200 bits" 
 
 Run "npm i" in source directory to meet dependencies.
 
