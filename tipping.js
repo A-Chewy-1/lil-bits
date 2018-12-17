@@ -6,7 +6,7 @@ const {
   bchAddressToInternal,
 } = require('./utils');
 
-const MIN_AMOUNT = 0.00001;
+const MIN_AMOUNT = 0.000001;
 
 const hasTooManyDecimalsForSats = (value, decimals) =>
   !n(n(value).toFixed(8)).eq(n(value));
@@ -50,7 +50,7 @@ const createTipping = ({ redisClient, say, fetchRpc, lockBitcoind }) => {
     const lock = await lockBitcoind();
 
     try {
-      const amountN = n(amount);
+      const amountN = n(amount).div(100000);
 
       assert(!hasTooManyDecimalsForSats(amountN), 'Too many decimals');
       assert(amountN.isFinite(), 'Not finite');
@@ -82,7 +82,7 @@ const createTipping = ({ redisClient, say, fetchRpc, lockBitcoind }) => {
     const lock = await lockBitcoind();
 
     try {
-      const amountN = n(amount);
+      const amountN = n(amount).div(100000);
 
       assert(!hasTooManyDecimalsForSats(amountN), 'Too many decimals');
       assert(amountN.isFinite(), 'Not finite');

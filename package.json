@@ -1,6 +1,6 @@
 {
-  "name": "shilly",
-  "version": "1.0.45",
+  "name": "Sweetie-Bot",
+  "version": "1.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {

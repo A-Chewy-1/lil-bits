@@ -10,7 +10,7 @@ const printError = (...args) => console.error(...args);
 exports.printError = printError;
 
 exports.formatBch = _ =>
-  '`' + numeral(_.toString()).format('0,0[.00000000]') + ' BCH`';
+  '`' + numeral(_.toString()*100000).format('0,0[00000000]') + ' Bits`';
 
 exports.formatUsd = _ => {
   if (+_ < 0.01) {
@@ -79,4 +79,20 @@ exports.bchAddressToInternal = address => {
     bch.Address.CashAddrFormat
   );
   return bchAddress.toString(bch.Address.LegacyFormat);
+};
+
+exports.parseBoolean = value => {
+  const valueLowerCase = value.toLowerCase();
+
+  if (valueLowerCase === 'true') {
+    return true;
+  }
+
+  if (valueLowerCase === 'false') {
+    return false;
+  }
+
+  throw new Error(
+    `Invalid value for boolean, "${value}". Expected true or false.`
+  );
 };
