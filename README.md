@@ -8,4 +8,6 @@ Cash addresses and legacy addresses are fully compatible with one another, and t
 
 This bot uses "bits" as its default unit. 
 
+Run "npm i" in source directory to meet dependencies.
+
 To run the bot use node index.js from the console in the source directory.
