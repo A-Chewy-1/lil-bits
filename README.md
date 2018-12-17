@@ -6,7 +6,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis
 Run your Bitcoin Cash Daemon with -usecashaddr=0  "./bitcoind -daemon -usecashaddr=0"
 Cash addresses and legacy addresses are fully compatible with one another, and the bot will produce a cash address with the deposit command.
 
-How to make a bot if you don't know, relevant up to step 5: https://www.digitaltrends.com/gaming/how-to-make-a-discord-bot/
+How to make a discord bot if you don't know; Relevant up to step 5: https://www.digitaltrends.com/gaming/how-to-make-a-discord-bot/
 
 This bot uses "bits" as its default unit. 
 
