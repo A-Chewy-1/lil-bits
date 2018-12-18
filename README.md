@@ -3,7 +3,7 @@
 This readme assumes you are running Ubuntu.
 
 This bot requires redis. For installing please refer to:
-https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04h
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04
 
 Install Node and npm: https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/
 
