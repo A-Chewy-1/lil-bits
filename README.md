@@ -16,6 +16,8 @@ This bot uses "bits" as its default unit. "!tip @user 200 bits"
 
 Run "npm i" in source directory to meet dependencies.
 
+Configuration options can be found in index.js.
+
 To run the bot use the command "node index.js" from the console in the source directory.
 
 Run this software at your own risk. Never play leap frog with a unicorn. Apple Jack is best pony.
